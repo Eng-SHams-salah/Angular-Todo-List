@@ -17,7 +17,7 @@ interface Task {
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent {
-  @Input() isDarkMode = false; // جاي من App
+  @Input() isDarkMode = false; 
   @Output() modeToggle = new EventEmitter<void>();
 
   newTask = '';
@@ -25,16 +25,16 @@ export class TodoListComponent {
   selectedTaskIndex: number | null = null;
 
 softColors: string[] = [
-  '#FFB3BA', // soft pink
-  '#FFDFBA', // peach
-  '#FFFFBA', // light yellow
-  '#BAFFC9', // mint green
-  '#BAE1FF', // baby blue
-  '#E7BAFF', // lavender
-  '#FFD6E0', // light rose
-  '#C9F9FF', // aqua pastel
-  '#F6FFA6', // lemon pastel
-  '#D7FFD9'  // soft green
+  '#FFB3BA', 
+  '#FFDFBA', 
+  '#FFFFBA', 
+  '#BAFFC9', 
+  '#BAE1FF', 
+  '#E7BAFF', 
+  '#FFD6E0', 
+  '#C9F9FF', 
+  '#F6FFA6', 
+  '#D7FFD9'  
 ];
 
 
